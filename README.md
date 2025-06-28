@@ -5,20 +5,6 @@ It enables farmers and veterinarians to diagnose diseases quickly by uploading a
 
 ---
 
-## 📁 Project Structure
-Poultry-Disease-Detector/
-│
-├── app.py # Flask application for disease prediction
-├── poultry_model.h5 # Trained CNN model
-├── disease.ipynb # Jupyter Notebook used for model training
-├── dataset_split/ # Contains training and test image folders
-├── index.html # Frontend HTML template
-├── uploads/ # Stores uploaded images temporarily
-├── static/ # (Optional) Holds raw unsplit dataset
-└── .gitignore # Files and folders excluded from Git
-
-
----
 
 ## 🧠 About the Core Files
 
@@ -45,7 +31,6 @@ The dataset is manually collected and categorized into the following classes:
 📄 Project Reports & Templates
 - 📎 Full Report (Word): https://drive.google.com/drive/folders/1bewLTMZhPchixh7ZpOs3emGGsPBGFfER?usp=sharing
 
-📎 Technical Documentation:
 - Includes architecture, setup instructions, API, authentication, and known issues.
 
 ✅ Features
