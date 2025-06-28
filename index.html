@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poultry Disease Detector</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #28a745;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #28a745;
+      font-size: 1.8em;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    form {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      margin-top: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .prediction {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.3em;
+      color: #007bff;
+    }
+
+    .scenario {
+      margin-top: 30px;
+      padding-left: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poultry Disease Detection & Management</h1>
+    <p>Empowering Farmers, Vets & Students Through AI</p>
+  </header>
+
+  <div class="container">
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <h2>Upload an Image to Detect Disease</h2>
+      <input type="file" name="file" required><br><br>
+      <input type="submit" value="Predict Disease">
+    </form>
+
+    {% if prediction %}
+      <div class="prediction">
+        🔍 Predicted Disease: <strong>{{ prediction }}</strong>
+      </div>
+    {% endif %}
+
+    <div class="scenario">
+      <h2>🌾 Scenario 1: Outbreak in a Rural Community</h2>
+      <p>Farmers in a remote area detect sick birds but lack immediate veterinary help. With our app, they upload bird images and get an instant diagnosis — Coccidiosis — along with treatment steps, saving their flocks and income.</p>
+    </div>
+
+    <div class="scenario">
+      <h2>🏢 Scenario 2: Commercial Poultry Farm Management</h2>
+      <p>On a large poultry farm, the app detects New Castle Disease early. Thanks to timely alerts, the infected flock is isolated, stopping a potential outbreak and protecting the farm’s productivity and reputation.</p>
+    </div>
+
+    <div class="scenario">
+      <h2>🎓 Scenario 3: Veterinary Training & Research</h2>
+      <p>Veterinary students use the app for practical training. By simulating real-world cases, they learn to detect diseases like Salmonella and Coccidiosis using machine learning — preparing them to lead in digital animal health.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Poultry Disease Detector | Built with ❤️ using AI & Flask
+  </footer>
+
+</body>
+</html>
