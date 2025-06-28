@@ -6,12 +6,13 @@ It enables farmers and veterinarians to diagnose diseases quickly by uploading a
 ---
 
 
-## 🧠 About the Core Files
+## 🧠 About the Files
 
 - `app.py` - Flask backend that loads the model and serves predictions based on uploaded images.
 - `poultry_model.h5` - The trained Keras model saved after fine-tuning with transfer learning.
 - `disease.ipynb` - Notebook containing data preprocessing, model training, evaluation, and performance metrics.
 - `dataset_split/` - This folder contains the `train/` and `test/` directories with categorized images.
+- .gitignore # Files and folders excluded from Git
 
 ---
 
