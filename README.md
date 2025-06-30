@@ -30,8 +30,9 @@ The dataset is manually collected and categorized into the following classes:
 ---
 
 📄 Project Reports & Templates
-- 📎 Full Report (Word): [Demo video](https://drive.google.com/drive/folders/1bewLTMZhPchixh7ZpOs3emGGsPBGFfER?usp=sharing)
-- Demo video link : https://drive.google.com/file/d/1dsaZNM9htdj7158j5z-S13lP05fhhRXo/view?usp=sharing
+- 📎 Full Report (Word): [Documents](https://drive.google.com/drive/folders/1bewLTMZhPchixh7ZpOs3emGGsPBGFfER?usp=sharing)
+  
+- Demo video link : [Demo video](https://drive.google.com/file/d/1dsaZNM9htdj7158j5z-S13lP05fhhRXo/view?usp=sharing)
 
 - Includes architecture, setup instructions, API, authentication, and known issues.
 
